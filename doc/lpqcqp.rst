@@ -280,7 +280,7 @@ If a callback function returns ``:Exit``, the solver is expected to terminate wi
 
 .. function:: cbgetstate(d::MathProgCallbackData)
 
-   Returns current location in solve process: ``:MIPNode`` if at node in branch-and-cut tree, ``:MIPSol`` at an integer-feasible solution, and ``:Other`` otherwise.
+   Returns current location in solve process: ``:MIPNode`` if at node in branch-and-cut tree, ``:MIPSol`` at an integer-feasible solution, and ``:Intermediate`` otherwise.
 
 .. function:: cbaddcut!(d::MathProgCallbackData,varidx,varcoef,sense,rhs)
 
